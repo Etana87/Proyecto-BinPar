@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medibuddy Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body class="bg-[#F3F4F6] text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-[#1E40AF] text-white p-4 text-center shadow-md">
+    <h1 class="text-2xl font-bold">Medibuddy</h1>
+    <p class="text-sm">Tu compañero de estudio en medicina</p>
+  </header>
+
+  <!-- Chat -->
+  <main id="chat" class="flex-1 overflow-y-auto p-4 space-y-4">
+    <!-- Mensajes que se agregan con JS -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 flex gap-2 shadow-inner">
+    <input id="userInput" type="text" placeholder="Escribe tu pregunta..." class="flex-1 border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300" />
+    <button id="sendBtn" class="bg-[#EF4444] text-white border border-[#EF4444] px-4 py-2 rounded hover:bg-[#F3F4F6] hover:text-[#EF4444] transition-colors duration-200">Enviar</button>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
